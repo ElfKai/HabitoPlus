@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.HabitoPlus" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Colores principales -->
+        <item name="colorPrimary">#E3ACB8</item> <!-- Color rosa claro predominante -->
+        <item name="colorPrimaryVariant">#493971</item> <!-- Tono oscuro para contraste -->
+        <item name="colorOnPrimary">#FF0000</item> <!-- Texto blanco sobre rosa -->
+
+        <!-- Colores de acento -->
+        <item name="colorAccent">#493971</item> <!-- Color púrpura para botones o íconos -->
+
+        <!-- Fondo -->
+        <item name="android:colorBackground">#F4DCD9</item> <!-- Color de fondo rosa pastel claro -->
+        <item name="colorOnBackground">#493971</item> <!-- Texto oscuro para buen contraste -->
+
+        <!-- Texto -->
+        <item name="android:textColorPrimary">#493971</item> <!-- Texto en general -->
+        <item name="android:textColorSecondary">#6E5A87</item> <!-- Texto secundario -->
+    </style>
+
+    <style name="Theme.HabitoPlus" parent="Base.Theme.HabitoPlus" />
+</resources>

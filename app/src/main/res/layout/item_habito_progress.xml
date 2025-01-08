@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="66dp"
+    android:background="@drawable/bg_items_progress"
+    android:elevation="10dp"
+    android:padding="8dp">
+
+    <!-- Imagen de estrella a la derecha -->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_star_foreground" />
+
+    <!-- Título del progreso o logro -->
+    <TextView
+        android:id="@+id/logro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Racha de un mes"
+        android:textColor="?android:textColorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/imageView2"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Barra de progreso -->
+    <ProgressBar
+        android:id="@+id/progress_habit"
+        style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:max="100"
+        android:progress="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logro" />
+
+    <!-- Imagen de estrella a la izquierda -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_star_foreground" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

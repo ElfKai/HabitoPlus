@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/button" /> <!-- Cambia @color/primary por el color deseado -->
+    <corners android:radius="200dp" /> <!-- Esto hace que el botón sea perfectamente redondo -->
+
+</shape>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="214dp"
+        android:layout_height="214dp"
+        android:elevation="8dp"
+        android:background="@drawable/bg_round_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.182"
+        app:srcCompat="@mipmap/ic_default_profile_foreground" />
+
+    <ImageButton
+        android:id="@+id/dark_mode_toggle"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="52dp"
+        android:background="@drawable/ic_moon_foreground"
+        android:contentDescription="Dark Mode Toggle"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.797"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/regresar1"
+        android:contentDescription="Back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/ic_back_foreground"/>
+
+    <TextView
+        android:layout_width="114dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="336dp"
+        android:layout_marginEnd="148dp"
+        android:text="Usuario"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="360dp"
+        android:layout_height="420dp"
+        android:background="@drawable/bg_box_logros"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.868">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="82dp"
+            android:layout_height="72dp"
+            android:layout_marginEnd="44dp"
+            app:tint="#B62323"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_star_foreground" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="82dp"
+            android:layout_height="72dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="7dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_star_foreground"
+            app:tint="#B62323" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="82dp"
+            android:layout_height="72dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="-5dp"
+            android:layout_marginBottom="-4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_star_foreground"
+            app:tint="#B62323" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="82dp"
+            android:layout_height="72dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="275dp"
+            android:layout_marginBottom="-2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_star_foreground"
+            app:tint="#B62323" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="82dp"
+            android:layout_height="72dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="136dp"
+            android:layout_marginBottom="-4dp"
+            android:elevation="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_star_foreground"
+            app:tint="#B62323" />
+
+        <TextView
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="118dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="127dp"
+            android:background="@drawable/bg_items_progress"
+            android:fontFamily="sans-serif"
+            android:text="Logros"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="165dp"
+            tools:layout_editor_absoluteY="367dp" />
+
+        <Button
+            android:id="@+id/share1"
+            android:layout_width="57dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="142dp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#EAE4EC"
+            android:contentDescription="Compartir"
+            android:onClick="sendEmail"
+            app:icon="@drawable/ic_share_foreground"
+            app:iconGravity="start|end"
+
+            app:iconSize="36dp"
+            app:iconTint="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_habito_progress"
+            android:layout_width="match_parent"
+            android:layout_height="290dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="67dp"
+            android:padding="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="96dp"
+            android:layout_height="74dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="368dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="8dp"
+            app:srcCompat="@drawable/ic_star_foreground"
+            app:tint="#B62323" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="85dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="204dp"
+            android:layout_marginBottom="4dp"
+            app:srcCompat="@drawable/ic_star_foreground"
+            app:tint="#B62323" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

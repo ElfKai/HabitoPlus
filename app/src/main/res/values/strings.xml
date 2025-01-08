@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">HabitoPlus</string>
+    <!-- Días de la semana -->
+    <string-array name="dias_semana">
+        <item>Lunes</item>
+        <item>Martes</item>
+        <item>Miércoles</item>
+        <item>Jueves</item>
+        <item>Viernes</item>
+        <item>Sábado</item>
+        <item>Domingo</item>
+    </string-array>
+
+</resources>

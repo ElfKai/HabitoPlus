@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_items_progress"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Campo para el título del hábito -->
+        <EditText
+            android:id="@+id/edtTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Título del hábito" />
+
+        <!-- Campo para la descripción -->
+        <EditText
+            android:id="@+id/edtDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:hint="Descripción"
+            android:inputType="textMultiLine" />
+
+        <!-- Campo para la hora -->
+        <EditText
+            android:id="@+id/edtHora"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:hint="Hora (HH:mm)"
+            android:inputType="time" />
+
+        <!-- Spinner para seleccionar el día -->
+        <Spinner
+            android:id="@+id/spinnerDia"
+            android:layout_width="match_parent"
+            android:layout_height="69dp" />
+
+        <!-- CheckBox para repetir todos los días -->
+        <CheckBox
+            android:id="@+id/cbRepetirTodosLosDias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Repetir todos los días"
+            android:paddingVertical="8dp" />
+
+        <!-- Campo para seleccionar la fecha de inicio -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingVertical="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fecha de inicio"
+                android:textStyle="bold" />
+
+            <DatePicker
+                android:id="@+id/datePickerInicio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Campo para seleccionar la fecha de finalización -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingVertical="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fecha de finalización"
+                android:textStyle="bold" />
+
+            <DatePicker
+                android:id="@+id/datePickerFin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Botón para guardar el hábito -->
+        <Button
+            android:id="@+id/btnGuardarHabito"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Guardar hábito" />
+    </LinearLayout>
+</ScrollView>
